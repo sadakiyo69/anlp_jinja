@@ -1,0 +1,61 @@
+You are an expert in movie review analysis.
+Your task is to analyze movie reviews and return structured outputs.
+
+## Instruction:
+- classify the sentiment (positive | negative | neutral)
+- extract aspects (pacing, plot, acting, visuals, music)
+{% if include_reasoning %}
+- reasoning: short explanation
+{% endif %}
+
+
+## Output rule:
+You must follow the format used in the examples.
+
+## Few-shot examples:
+
+{% for ex in examples %}
+
+### Example Review:
+"{{ ex.review }}"
+
+### Output Format Used:
+{% if ex.format == "json" %}
+JSON
+{% else %}
+Bullet
+{% endif %}
+
+### Output:
+{{ ex.output }}
+
+{% endfor %}
+
+
+## Analyze this review now:
+
+"{{ target_review }}"
+
+---
+
+## Final output format:
+
+{% if output_format == "json" %}
+
+Return STRICT JSON ONLY:
+
+{
+  "sentiment": "...",
+  "aspects": ["..."],
+  "reasoning": "..."
+}
+
+{% else %}
+
+Return BULLET POINT format ONLY:
+
+- sentiment: ...
+- aspects: ...
+- reasoning: ...
+
+{% endif %}
