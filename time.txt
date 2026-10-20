@@ -1,0 +1,55 @@
+Loaded 381 forward images
+Device: cuda
+Batch size: 32
+Stages: 128
+Substeps: 4
+Repeat: 1
+Save outputs: True
+batch 1: 32 images, compute 6.1117 s, 5.24 img/s
+           save    10.0805 s
+batch 2: 32 images, compute 6.1086 s, 5.24 img/s
+           save    12.0516 s
+batch 3: 32 images, compute 6.1248 s, 5.22 img/s
+           save    12.0517 s
+batch 4: 32 images, compute 6.1539 s, 5.20 img/s
+           save    12.6957 s
+batch 5: 32 images, compute 6.2563 s, 5.11 img/s
+           save    11.9473 s
+batch 6: 32 images, compute 6.2419 s, 5.13 img/s
+           save    10.7454 s
+batch 7: 32 images, compute 6.1609 s, 5.19 img/s
+           save    9.6657 s
+batch 8: 32 images, compute 6.2184 s, 5.15 img/s
+           save    9.9033 s
+batch 9: 32 images, compute 6.0657 s, 5.28 img/s
+           save    11.1961 s
+batch 10: 32 images, compute 6.1068 s, 5.24 img/s
+           save    9.7023 s
+batch 11: 32 images, compute 6.1223 s, 5.23 img/s
+           save    9.2514 s
+batch 12: 29 images, compute 5.5032 s, 5.27 img/s
+           save    7.8305 s
+
+Inverse compute total time: 73.1744 s
+Inverse compute throughput: 5.21 img/s
+Output save total time: 127.1215 s
+
+
+
+
+
+Loaded 381 forward images
+Device: cpu
+Batch size: 32
+Stages: 128
+Substeps: 4
+Repeat: 1
+Save outputs: True
+batch 1: 32 images, compute 209.4173 s, 0.15 img/s
+           save    10.0462 s
+batch 2: 32 images, compute 214.0622 s, 0.15 img/s
+           save    11.9573 s
+batch 3: 32 images, compute 215.6702 s, 0.15 img/s
+           save    11.9789 s
+batch 4: 32 images, compute 215.1381 s, 0.15 img/s
+           save    12.6776 s
